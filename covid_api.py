@@ -1,15 +1,17 @@
-from dotenv import load_dotenv
-import os
+# from dotenv import load_dotenv
+# import os
+
 import requests
 from prettytable import PrettyTable
 from datetime import datetime
 
-load_dotenv()
+# load_dotenv()
 
 url = "https://covid-193.p.rapidapi.com/statistics"
 
 headers = {
     'x-rapidapi-key': os.getenv("API_KEY"),
+    # 'x-rapidapi-key': "API_KEY",
     'x-rapidapi-host': "covid-193.p.rapidapi.com"
     }
 
